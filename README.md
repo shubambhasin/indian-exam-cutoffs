@@ -3,7 +3,7 @@
 Category-wise qualifying cutoffs for India's major engineering and medical entrance
 exams, 2019 onwards — with the source and confidence level attached to every figure.
 
-**Live site:** _add the Vercel URL here once the project is imported_
+**Live site:** https://shubambhasin.github.io/indian-exam-cutoffs/
 
 ## What this is
 
@@ -62,8 +62,19 @@ npm run validate    # schema + sanity checks
 npm run dev         # validate, then serve at http://localhost:4173
 ```
 
-The validator also runs on Vercel as the build command, so a malformed dataset fails the
-deploy instead of shipping a broken page.
+The validator gates both deployment paths — it is the Vercel build command, and it runs
+as the first step of the GitHub Pages workflow — so a malformed dataset fails the deploy
+instead of shipping a broken page.
+
+## Deployment
+
+The site is served from GitHub Pages via `.github/workflows/pages.yml`, which validates
+the dataset and then publishes with `actions/deploy-pages`. Pushing to `main` redeploys.
+
+`vercel.json` is retained so the repo can also be imported into Vercel (useful for preview
+deployments on pull requests). The two are independent; neither requires the other. All
+asset paths are relative, so the site works both at a domain root and under the
+`/indian-exam-cutoffs/` subpath.
 
 ## Corrections
 
