@@ -1,0 +1,530 @@
+{
+  "meta": {
+    "title": "Indian Exam Cutoffs",
+    "subtitle": "Category-wise entry bars, 2019 onwards",
+    "lastUpdated": "2026-08-28",
+    "schemaVersion": 1,
+    "confidenceLevels": {
+      "official": "Read directly from the conducting authority's own published document.",
+      "verified": "Not read from a primary PDF, but two or more independent sources state identical figures.",
+      "single-source": "Only one source found. Treat as indicative until confirmed against the authority.",
+      "none": "No published data exists for this exam-year."
+    }
+  },
+
+  "exams": [
+    {
+      "id": "jee-main",
+      "name": "JEE Main",
+      "stream": "Engineering",
+      "authority": "National Testing Agency (NTA)",
+      "leadsTo": "NITs, IIITs, GFTIs; and eligibility for JEE Advanced",
+      "status": "complete",
+      "summary": "NTA publishes a category-wise qualifying percentile each year. Clearing it makes a candidate eligible for JEE Advanced, subject to the overall top-2.5-lakh limit. Raw marks are no longer released, so percentile is the only official comparable series.",
+      "qualifying": {
+        "metric": "Qualifying percentile for JEE Advanced",
+        "unit": "percentile",
+        "axisMax": 100,
+        "axisMin": 0,
+        "decimals": 2,
+        "bands": [
+          { "id": "gen", "label": "General (CRL)", "categories": ["gen"] },
+          { "id": "ews", "label": "EWS", "categories": ["ews"] },
+          { "id": "obc", "label": "OBC-NCL", "categories": ["obc"] },
+          { "id": "sc", "label": "SC", "categories": ["sc"] },
+          { "id": "st", "label": "ST", "categories": ["st"] }
+        ],
+        "series": [
+          { "year": 2019, "values": { "gen": 89.7548849, "ews": 78.2174869, "obc": 74.3166557, "sc": 54.0128155, "st": 44.3345172 }, "confidence": "official", "source": "nta-2019" },
+          { "year": 2020, "values": { "gen": 90.3765335, "ews": 70.2435518, "obc": 72.8887969, "sc": 50.1760245, "st": 39.0696101 }, "confidence": "verified", "source": "esaral" },
+          { "year": 2021, "values": { "gen": 87.8992241, "ews": 66.2214845, "obc": 68.0234447, "sc": 46.8825338, "st": 34.6728999 }, "confidence": "verified", "source": "esaral" },
+          { "year": 2022, "values": { "gen": 88.4121383, "ews": 63.1114141, "obc": 67.0090297, "sc": 43.0820954, "st": 26.7771328 }, "confidence": "verified", "source": "esaral" },
+          { "year": 2023, "values": { "gen": 90.7788642, "ews": 75.6229025, "obc": 73.6114227, "sc": 51.9776027, "st": 37.2348772 }, "confidence": "verified", "source": "careers360-jeemain" },
+          { "year": 2024, "values": { "gen": 93.2362181, "ews": 81.3266412, "obc": 79.6757881, "sc": 60.0923182, "st": 46.697584 }, "confidence": "verified", "source": "careers360-jeemain" },
+          { "year": 2025, "values": { "gen": 93.1023262, "ews": 80.3830119, "obc": 79.4313582, "sc": 61.1526933, "st": 47.9026465 }, "confidence": "verified", "source": "esaral" },
+          { "year": 2026, "values": { "gen": 93.4123549, "ews": 82.4164528, "obc": 80.9232583, "sc": 63.9172792, "st": 52.0174712 }, "confidence": "verified", "source": "aakash-2026" }
+        ]
+      },
+      "notes": [
+        "The EWS category exists only from 2019, which is why this series starts there.",
+        "2021 and 2022 were the pandemic-era low points; every category has climbed since, and 2026 set a record high for all five.",
+        "PwD candidates are excluded from this view by design. Their cutoff is effectively a floor near the 0th percentile (0.0018–0.11 depending on year), which would flatten the chart."
+      ],
+      "sources": ["nta-2019", "esaral", "careers360-jeemain", "aakash-2026"]
+    },
+
+    {
+      "id": "jee-advanced",
+      "name": "JEE Advanced",
+      "stream": "Engineering",
+      "authority": "Joint Admission Board (JAB), IITs",
+      "leadsTo": "The 23 IITs, plus IISc, IIST, IIPE, RGIPT",
+      "status": "complete",
+      "summary": "The JAB publishes both a minimum subject-wise and a minimum aggregate mark for inclusion in each rank list. Because the paper total changed (372 in 2019, 396 in 2020, 360 since 2021), the percentage of aggregate marks is the only figure comparable across all years.",
+      "qualifying": {
+        "metric": "Minimum aggregate marks for the rank list",
+        "unit": "% of aggregate",
+        "axisMax": 35,
+        "axisMin": 0,
+        "decimals": 2,
+        "bands": [
+          { "id": "gen", "label": "General (CRL)", "categories": ["gen"] },
+          { "id": "ews_obc", "label": "EWS / OBC-NCL", "categories": ["ews", "obc"] },
+          { "id": "sc_st", "label": "SC / ST", "categories": ["sc", "st"] }
+        ],
+        "series": [
+          { "year": 2019, "values": { "gen": 25.0, "ews_obc": 22.5, "sc_st": 12.5 }, "absolute": { "gen": 93, "ews_obc": 83, "sc_st": 46 }, "total": 372, "confidence": "official", "source": "jab-2019" },
+          { "year": 2020, "values": { "gen": 17.5, "ews_obc": 15.75, "sc_st": 8.75 }, "absolute": { "gen": 69, "ews_obc": 62, "sc_st": 34 }, "total": 396, "confidence": "official", "source": "jab-2020" },
+          { "year": 2021, "values": { "gen": 17.5, "ews_obc": 15.75, "sc_st": 8.75 }, "absolute": { "gen": 63, "ews_obc": 56, "sc_st": 31 }, "total": 360, "confidence": "official", "source": "jab-2021" },
+          { "year": 2022, "values": { "gen": 15.28, "ews_obc": 13.89, "sc_st": 7.78 }, "absolute": { "gen": 55, "ews_obc": 50, "sc_st": 28 }, "total": 360, "confidence": "official", "source": "jab-2022" },
+          { "year": 2023, "values": { "gen": 23.89, "ews_obc": 21.5, "sc_st": 11.95 }, "absolute": { "gen": 86, "ews_obc": 77, "sc_st": 43 }, "total": 360, "confidence": "official", "source": "jab-2023" },
+          { "year": 2024, "values": { "gen": 30.34, "ews_obc": 27.3, "sc_st": 15.17 }, "absolute": { "gen": 109, "ews_obc": 98, "sc_st": 54 }, "total": 360, "confidence": "official", "source": "jab-2024" },
+          { "year": 2025, "values": { "gen": 20.56, "ews_obc": 18.5, "sc_st": 10.28 }, "absolute": { "gen": 74, "ews_obc": 66, "sc_st": 37 }, "total": 360, "confidence": "official", "source": "jab-cutoffs-2025" },
+          { "year": 2026, "values": { "gen": 25.56, "ews_obc": 22.78, "sc_st": 12.78 }, "absolute": { "gen": 92, "ews_obc": 82, "sc_st": 46 }, "total": 360, "confidence": "official", "source": "jab-cutoffs-2026" }
+        ]
+      },
+      "notes": [
+        "EWS and OBC-NCL have shared an identical cutoff every year since EWS was introduced, and SC and ST have always been identical to each other. Five categories therefore produce only three distinct lines.",
+        "This bar is not a difficulty signal. The JAB states plainly that it lowers the advertised criteria until roughly twice the available seats qualify — so the line tracks the seat-to-candidate ratio, not the paper.",
+        "2019 marks are out of 372 and 2020 out of 396; only the percentage series is comparable end to end.",
+        "A candidate must clear the subject-wise minimum in Physics, Chemistry and Mathematics simultaneously with the aggregate. Clearing the aggregate alone is not enough."
+      ],
+      "sources": ["jab-2019", "jab-2020", "jab-2021", "jab-2022", "jab-2023", "jab-2024", "jab-cutoffs-2025", "jab-cutoffs-2026"]
+    },
+
+    {
+      "id": "neet-ug",
+      "name": "NEET-UG",
+      "stream": "Medical — Undergraduate",
+      "authority": "National Testing Agency (NTA)",
+      "leadsTo": "MBBS, BDS, BAMS/BHMS/BUMS/BSMS, BVSc, BSc Nursing",
+      "status": "complete",
+      "summary": "The percentile is fixed by regulation — 50th for UR/EWS, 40th for OBC/SC/ST — so what moves each year is the mark that lands on that percentile. That mark is the honest measure of how the cohort performed.",
+      "qualifying": {
+        "metric": "Qualifying marks (lower bound of the band)",
+        "unit": "marks out of 720",
+        "axisMax": 260,
+        "axisMin": 0,
+        "decimals": 0,
+        "bands": [
+          { "id": "ur", "label": "UR / EWS — 50th percentile", "categories": ["gen", "ews"] },
+          { "id": "res", "label": "OBC / SC / ST — 40th percentile", "categories": ["obc", "sc", "st"] }
+        ],
+        "series": [
+          { "year": 2019, "values": { "ur": 134, "res": 107 }, "range": { "ur": "701–134", "res": "133–107" }, "confidence": "verified", "source": "allen-neet" },
+          { "year": 2020, "values": { "ur": 147, "res": 113 }, "range": { "ur": "720–147", "res": "146–113" }, "confidence": "verified", "source": "allen-neet" },
+          { "year": 2021, "values": { "ur": 138, "res": 108 }, "range": { "ur": "720–138", "res": "137–108" }, "confidence": "verified", "source": "allen-neet" },
+          { "year": 2022, "values": { "ur": 117, "res": 93 }, "range": { "ur": "715–117", "res": "116–93" }, "confidence": "verified", "source": "allen-neet" },
+          { "year": 2023, "values": { "ur": 137, "res": 107 }, "range": { "ur": "720–137", "res": "136–107" }, "confidence": "verified", "source": "allen-neet" },
+          { "year": 2024, "values": { "ur": 164, "res": 129 }, "range": { "ur": "720–164", "res": "163–129" }, "confidence": "verified", "source": "allen-neet" },
+          { "year": 2025, "values": { "ur": 144, "res": 113 }, "range": { "ur": "686–144", "res": "143–113" }, "confidence": "verified", "source": "allen-neet" },
+          { "year": 2026, "values": { "ur": 213, "res": 177 }, "range": { "ur": "715–213", "res": "212–177" }, "confidence": "verified", "source": "careers360-neet" }
+        ]
+      },
+      "notes": [
+        "EWS sits inside the UR band and has no separate NEET-UG cutoff. OBC, SC and ST all share the 40th-percentile band. Five categories therefore produce only two distinct lines — this is the single most misreported fact about NEET-UG cutoffs.",
+        "2026 is a sharp break from every prior year: the UR bar jumped from 144 to 213. Two independent sources report it identically, but it has not been checked against the NTA notification here — treat the size of the jump as worth confirming before quoting it.",
+        "The upper bound of each band is simply that year's topper score (701 in 2019, 715 in 2022, 686 in 2025), which is why the ranges look irregular.",
+        "Qualifying is not admission. A 50th-percentile score clears the exam and gets a candidate into counselling; government MBBS seats close hundreds of marks higher."
+      ],
+      "sources": ["allen-neet", "careers360-neet"]
+    },
+
+    {
+      "id": "neet-pg",
+      "name": "NEET-PG",
+      "stream": "Medical — Postgraduate",
+      "authority": "NBEMS",
+      "leadsTo": "MD / MS / PG Diploma / DNB",
+      "status": "partial",
+      "summary": "Nominally 50th percentile for UR/EWS and 40th for OBC/SC/ST. In practice NBEMS has cut the bar mid-counselling in most recent years to fill vacant seats, so the announced cutoff and the cutoff that actually governed admission are often different numbers.",
+      "qualifying": {
+        "metric": "Qualifying score as first announced",
+        "unit": "marks out of 800",
+        "axisMax": 400,
+        "axisMin": 0,
+        "decimals": 0,
+        "scaleChange": { "beforeYear": 2021, "note": "2019 and 2020 were scored out of 1200; from 2021 the paper is out of 800. The two eras are not directly comparable." },
+        "bands": [
+          { "id": "ur", "label": "UR / EWS — 50th percentile", "categories": ["gen", "ews"] },
+          { "id": "res", "label": "OBC / SC / ST — 40th percentile", "categories": ["obc", "sc", "st"] }
+        ],
+        "series": [
+          { "year": 2019, "values": { "ur": 321, "res": 281 }, "total": 1200, "confidence": "single-source", "source": "careers360-neetpg" },
+          { "year": 2020, "values": { "ur": 366, "res": 319 }, "total": 1200, "revised": "Lowered to the 30th percentile (UR) and 20th (reserved) in July 2020.", "confidence": "single-source", "source": "careers360-neetpg" },
+          { "year": 2021, "values": { "ur": 302, "res": 265 }, "total": 800, "revised": "Lowered to 35th percentile = 247 (UR) and 25th = 210 (reserved).", "confidence": "verified", "source": "getmyuni-neetpg" },
+          { "year": 2022, "values": { "ur": 275, "res": 245 }, "total": 800, "revised": "Lowered to 25th percentile = 201 (UR) and 15th = 169 (reserved).", "confidence": "verified", "source": "getmyuni-neetpg" },
+          { "year": 2023, "values": { "ur": 291, "res": 257 }, "total": 800, "confidence": "single-source", "source": "getmyuni-neetpg" },
+          { "year": 2024, "values": { "ur": 291, "res": 257 }, "total": 800, "confidence": "single-source", "source": "getmyuni-neetpg" },
+          { "year": 2025, "values": { "ur": 276, "res": 235 }, "total": 800, "revised": "Cut to the 7th percentile (UR) and 0th (reserved) for later counselling rounds.", "confidence": "verified", "source": "getmyuni-neetpg" }
+        ]
+      },
+      "notes": [
+        "2023 and 2024 are reported with identical figures (291 / 257) by the source used here. That is possible but unusual, and it has not been confirmed against an NBEMS notification — flagged rather than smoothed over.",
+        "The 2025 reduction to the 0th percentile for reserved categories means every candidate who sat the exam qualified. In such a year the cutoff carries no information about performance at all.",
+        "EWS follows the UR bar; OBC, SC and ST share a single reserved bar. As with NEET-UG, there are two lines, not five."
+      ],
+      "sources": ["careers360-neetpg", "getmyuni-neetpg", "pw-neetpg"]
+    },
+
+    {
+      "id": "ini-cet",
+      "name": "INI-CET",
+      "stream": "Medical — Postgraduate",
+      "authority": "AIIMS New Delhi",
+      "leadsTo": "PG seats at AIIMS, PGIMER, JIPMER, NIMHANS, SCTIMST",
+      "status": "partial",
+      "summary": "A percentile gate rather than a marks gate: 50th percentile for UR/EWS, 45th for OBC/SC/ST/PwBD, held constant across sessions. Because the percentile is fixed, the meaningful category-wise variation shows up in closing ranks, not in the qualifying bar.",
+      "qualifying": {
+        "metric": "Qualifying percentile",
+        "unit": "percentile",
+        "axisMax": 60,
+        "axisMin": 0,
+        "decimals": 2,
+        "bands": [
+          { "id": "ur", "label": "UR / EWS", "categories": ["gen", "ews"] },
+          { "id": "res", "label": "OBC / SC / ST / PwBD", "categories": ["obc", "sc", "st"] }
+        ],
+        "series": [
+          { "year": 2026, "values": { "ur": 50.17, "res": 45.29 }, "confidence": "single-source", "source": "careers360-inicet" }
+        ]
+      },
+      "closing": {
+        "metric": "Closing rank, January session",
+        "unit": "category rank",
+        "rankType": "category",
+        "bands": [
+          { "id": "gen", "label": "UR", "categories": ["gen"] },
+          { "id": "ews", "label": "EWS", "categories": ["ews"] },
+          { "id": "obc", "label": "OBC", "categories": ["obc"] },
+          { "id": "sc", "label": "SC", "categories": ["sc"] },
+          { "id": "st", "label": "ST", "categories": ["st"] }
+        ],
+        "series": [
+          { "year": 2026, "values": { "gen": 7621, "ews": 17596, "obc": 11318, "sc": 20266, "st": 27569 }, "confidence": "single-source", "source": "careers360-inicet" }
+        ]
+      },
+      "notes": [
+        "AIIMS runs two sessions a year (January and July). Only the January 2026 figures were obtained here; the July series is a known gap.",
+        "AIIMS does not consistently publish the raw marks behind these percentiles, which is why no marks series exists for INI-CET."
+      ],
+      "sources": ["careers360-inicet"]
+    },
+
+    {
+      "id": "neet-mds",
+      "name": "NEET-MDS",
+      "stream": "Dental — Postgraduate",
+      "authority": "NBEMS",
+      "leadsTo": "MDS",
+      "status": "partial",
+      "summary": "Same structure as NEET-PG — a nominal 50th/40th percentile that gets cut mid-cycle when seats go vacant. The reductions here have been among the steepest of any Indian exam.",
+      "qualifying": {
+        "metric": "Qualifying score as first announced",
+        "unit": "marks out of 960",
+        "axisMax": 400,
+        "axisMin": 0,
+        "decimals": 0,
+        "bands": [
+          { "id": "ur", "label": "UR / EWS — 50th percentile", "categories": ["gen", "ews"] },
+          { "id": "res", "label": "OBC / SC / ST — 40th percentile", "categories": ["obc", "sc", "st"] }
+        ],
+        "series": [
+          { "year": 2022, "values": { "ur": 286, "res": 250 }, "confidence": "single-source", "source": "careers360-mds" },
+          { "year": 2025, "values": { "ur": 261, "res": 227 }, "revised": "Cut in August 2025 to the 30.137th percentile (UR) and 20.137th (reserved).", "confidence": "verified", "source": "careers360-mds" },
+          { "year": 2026, "values": { "ur": 308, "res": 271 }, "confidence": "single-source", "source": "careers360-mds" }
+        ]
+      },
+      "notes": [
+        "2019, 2020, 2021, 2023 and 2024 marks were not recoverable at category level from the sources consulted — the series is deliberately left with gaps rather than interpolated.",
+        "The revision history is the real story: 2019 was cut to the 25.835th percentile, 2020 to the 31.065th (UR), and 2025 to the 30.137th. In each case the announced 50th-percentile bar was not the bar that governed admission.",
+        "NEET-MDS is scored out of 960 (240 questions × 4 marks), not out of 800 like NEET-PG."
+      ],
+      "sources": ["careers360-mds", "careers360-mds-2019"]
+    },
+
+    {
+      "id": "neet-ss",
+      "name": "NEET-SS",
+      "stream": "Medical — Super-speciality",
+      "authority": "NBEMS",
+      "leadsTo": "DM / MCh",
+      "status": "structural",
+      "summary": "NEET-SS has no category-wise qualifying cutoff. A single percentile applies to every candidate regardless of category, and it is computed separately for each specialty group. Reservation enters at counselling, not at the qualifying stage.",
+      "notes": [
+        "Because the qualifying bar does not vary by category, a General/EWS/OBC/SC/ST breakdown does not exist for this exam. Any source presenting one has invented it.",
+        "The single percentile has moved a great deal: 50th by default, reduced to the 45th in 2020, the 20th in 2022, and to zero for all candidates in 2023.",
+        "Cutoff marks are published group-wise (Medical, Surgical, Microbiology and so on), and those groups differ from each other by hundreds of marks — in 2025 the Microbiology group closed at 389 while the Medical group closed at 225."
+      ],
+      "sources": ["collegedekho-ss", "collegedunia-ss"]
+    },
+
+    {
+      "id": "ini-ss",
+      "name": "INI-SS",
+      "stream": "Medical — Super-speciality",
+      "authority": "AIIMS New Delhi",
+      "leadsTo": "DM / MCh at the Institutes of National Importance",
+      "status": "none",
+      "summary": "Conducted twice a year for super-speciality seats at the INIs, on the same percentile logic as INI-CET. No reliable category-wise series could be assembled from public sources.",
+      "notes": [
+        "AIIMS publishes results and allotment lists but not a consistent category-wise qualifying table, and the seat counts per specialty are small enough that closing ranks swing wildly between sessions.",
+        "Listed here so the gap is visible rather than silently omitted."
+      ],
+      "sources": []
+    },
+
+    {
+      "id": "fmge",
+      "name": "FMGE",
+      "stream": "Medical — Screening",
+      "authority": "NBEMS",
+      "leadsTo": "Registration to practise in India for foreign medical graduates",
+      "status": "structural",
+      "summary": "A flat pass mark of 150 out of 300 — 50% — with no category relaxation whatsoever. There is no General/EWS/OBC/SC/ST distinction to chart, by design.",
+      "passMark": { "marks": 150, "total": 300, "percent": 50 },
+      "passRates": [
+        { "session": "June 2023", "rate": 10.22, "confidence": "single-source" },
+        { "session": "December 2025", "rate": 23.9, "confidence": "single-source" },
+        { "session": "January 2026", "rate": 23.9, "appeared": 42872, "passed": 10264, "confidence": "single-source" },
+        { "session": "June 2026", "rate": 12.04, "confidence": "single-source" }
+      ],
+      "notes": [
+        "The pass mark is fixed and never moves with paper difficulty, candidate count, or seat availability — the opposite of every percentile-based exam on this page.",
+        "Because the bar is fixed, the pass rate is the variable that carries the information, and it swings enormously: roughly 10% in the hardest sessions against nearly 40% in the easiest.",
+        "Only a partial set of session-wise pass rates was recoverable; the series is not complete back to 2019."
+      ],
+      "sources": ["careers360-fmge", "pw-fmge"]
+    },
+
+    {
+      "id": "next",
+      "name": "NExT",
+      "stream": "Medical — Proposed exit exam",
+      "authority": "National Medical Commission",
+      "leadsTo": "Intended to replace the MBBS final examination, FMGE and NEET-PG",
+      "status": "none",
+      "summary": "Never conducted. There is no cutoff data of any kind, for any category, in any year.",
+      "notes": [
+        "Rollout has been deferred repeatedly since it was first notified. NEET-PG and FMGE remain the operative exams.",
+        "Included because its absence is itself the answer — a page that quietly dropped it would imply data exists somewhere."
+      ],
+      "sources": []
+    },
+
+    {
+      "id": "aiapget",
+      "name": "AIAPGET",
+      "stream": "AYUSH — Postgraduate",
+      "authority": "NTA, for the Ministry of Ayush",
+      "leadsTo": "PG in Ayurveda, Homoeopathy, Unani and Siddha",
+      "status": "partial",
+      "summary": "Percentile rules follow the standard medical pattern — 50th for UR/EWS, 40th for OBC/SC/ST, 45th for UR-PwD — but the marks are published separately for each of the four streams, which behave quite differently.",
+      "streamCutoffs": {
+        "year": 2025,
+        "unit": "marks",
+        "rows": [
+          { "stream": "Ayurveda", "ur": 101, "res": 86, "urPwd": 94 },
+          { "stream": "Homoeopathy", "ur": 112, "res": 96, "urPwd": 110 },
+          { "stream": "Siddha", "ur": 128, "res": 112, "urPwd": null },
+          { "stream": "Unani", "ur": 119, "res": 103, "urPwd": null }
+        ],
+        "confidence": "single-source",
+        "source": "collegedekho-aiapget"
+      },
+      "notes": [
+        "Unani is the one stream where the published figures differ between reserved categories — OBC 103, SC 104, ST 110 — rather than sharing a single reserved bar.",
+        "Siddha reported no qualifiers in the ST and PwD categories in 2025, which is why those cells are empty rather than zero.",
+        "Only 2025 stream-wise marks were recoverable; earlier years are a gap."
+      ],
+      "sources": ["collegedekho-aiapget", "collegedunia-aiapget"]
+    },
+
+    {
+      "id": "norcet",
+      "name": "NORCET",
+      "stream": "Nursing — Recruitment",
+      "authority": "AIIMS New Delhi",
+      "leadsTo": "Nursing Officer posts across AIIMS institutions",
+      "status": "partial",
+      "summary": "A recruitment exam rather than an admissions test, and the only entry on this page where OBC gets its own distinct percentile band (45th) separate from both UR and SC/ST.",
+      "qualifying": {
+        "metric": "Qualifying percentage, NORCET-5 (2023)",
+        "unit": "percent",
+        "axisMax": 60,
+        "axisMin": 0,
+        "decimals": 3,
+        "bands": [
+          { "id": "ur", "label": "UR / EWS", "categories": ["gen", "ews"] },
+          { "id": "obc", "label": "OBC", "categories": ["obc"] },
+          { "id": "sc_st", "label": "SC / ST", "categories": ["sc", "st"] }
+        ],
+        "series": [
+          { "year": 2023, "values": { "ur": 50.0, "obc": 45.0, "sc_st": 40.0 }, "confidence": "verified", "source": "careers360-norcet" }
+        ]
+      },
+      "notes": [
+        "The same 50 / 45 / 40 structure was applied in NORCET-8 and NORCET-9, so the bands are stable even though a full year-by-year series was not recoverable.",
+        "PwBD candidates receive a further 5% relaxation on top of their category band.",
+        "AIIMS numbers its NORCET editions rather than its years, and more than one edition can fall in a calendar year — a reason to store the edition alongside the year when this series is extended."
+      ],
+      "sources": ["careers360-norcet", "pw-norcet"]
+    },
+
+    {
+      "id": "gpat",
+      "name": "GPAT",
+      "stream": "Pharmacy — Postgraduate",
+      "authority": "NBEMS (previously NTA / AICTE)",
+      "leadsTo": "M.Pharm admissions and AICTE scholarships",
+      "status": "partial",
+      "summary": "One of the few exams on this page that publishes a genuinely distinct qualifying mark for all five categories, with a wide spread between them — the ST bar has sat at roughly 40% of the General bar.",
+      "qualifying": {
+        "metric": "Qualifying marks",
+        "unit": "marks",
+        "axisMax": 260,
+        "axisMin": 0,
+        "decimals": 0,
+        "bands": [
+          { "id": "gen", "label": "General", "categories": ["gen"] },
+          { "id": "ews", "label": "EWS", "categories": ["ews"] },
+          { "id": "obc", "label": "OBC-NCL", "categories": ["obc"] },
+          { "id": "sc", "label": "SC", "categories": ["sc"] },
+          { "id": "st", "label": "ST", "categories": ["st"] }
+        ],
+        "series": [
+          { "year": 2019, "values": { "gen": 141, "ews": null, "obc": 117, "sc": 95, "st": 74 }, "confidence": "single-source", "source": "collegedunia-gpat" },
+          { "year": 2020, "values": { "gen": 163, "ews": 104, "obc": 131, "sc": 103, "st": 76 }, "confidence": "single-source", "source": "collegedunia-gpat" },
+          { "year": 2025, "values": { "gen": 216, "ews": 172, "obc": 168, "sc": 119, "st": 85 }, "confidence": "single-source", "source": "collegedunia-gpat" }
+        ]
+      },
+      "notes": [
+        "2019 predates a separate EWS cutoff for this exam, so that cell is empty rather than zero.",
+        "2021 was published as score ranges rather than single cutoffs, and 2022–2024 were not recoverable at category level — the gap is left visible.",
+        "Administration moved between AICTE, NTA and NBEMS over this period, and the published format changed with it, which is the main reason the series is patchy."
+      ],
+      "sources": ["collegedunia-gpat", "pw-gpat"]
+    },
+
+    {
+      "id": "niper-jee",
+      "name": "NIPER JEE",
+      "stream": "Pharmacy — Postgraduate",
+      "authority": "NIPER",
+      "leadsTo": "M.S. (Pharm.), M.Tech (Pharm.), MBA (Pharm.) at the NIPERs",
+      "status": "structural",
+      "summary": "Qualifying is expressed as a flat percentage of marks by category — 50% General, 45% OBC/EWS, 40% SC/ST/PwD — rather than as a percentile or a moving mark.",
+      "qualifying": {
+        "metric": "Qualifying percentage of marks",
+        "unit": "percent",
+        "axisMax": 60,
+        "axisMin": 0,
+        "decimals": 0,
+        "bands": [
+          { "id": "gen", "label": "General", "categories": ["gen"] },
+          { "id": "obc_ews", "label": "OBC / EWS", "categories": ["obc", "ews"] },
+          { "id": "sc_st", "label": "SC / ST", "categories": ["sc", "st"] }
+        ],
+        "series": [
+          { "year": 2025, "values": { "gen": 50, "obc_ews": 45, "sc_st": 40 }, "confidence": "single-source", "source": "pw-niper" }
+        ]
+      },
+      "notes": [
+        "Because the bar is a fixed percentage, it does not move year to year the way a percentile-derived mark does — a single row describes the rule rather than a trend.",
+        "NIPER also admits through GPAT scores, and the GPAT-based cutoffs are separate from these.",
+        "No usable category-wise history for 2019–2024 was found on NIPER's own site."
+      ],
+      "sources": ["pw-niper", "collegedekho-niper"]
+    }
+  ],
+
+  "benchmarks": [
+    {
+      "id": "iitb-cse",
+      "name": "IIT Bombay — Computer Science & Engineering",
+      "examId": "jee-advanced",
+      "authority": "JoSAA",
+      "rankType": "category",
+      "rankNote": "For reserved categories JoSAA publishes the closing rank within that category, not the Common Rank List position. This is why the ST figure is numerically lower than the OPEN figure — it is a rank among ST candidates only, and comparing the two numbers directly is meaningless.",
+      "unit": "closing rank, final round",
+      "bands": [
+        { "id": "gen", "label": "OPEN", "categories": ["gen"] },
+        { "id": "ews", "label": "EWS", "categories": ["ews"] },
+        { "id": "obc", "label": "OBC-NCL", "categories": ["obc"] },
+        { "id": "sc", "label": "SC", "categories": ["sc"] },
+        { "id": "st", "label": "ST", "categories": ["st"] }
+      ],
+      "series": [
+        { "year": 2025, "values": { "gen": 66, "ews": 20, "obc": 60, "sc": 33, "st": 16 }, "confidence": "single-source", "source": "motion-iitb" },
+        { "year": 2026, "values": { "gen": 67, "ews": 20, "obc": 62, "sc": 39, "st": 16 }, "confidence": "single-source", "source": "motion-iitb" }
+      ],
+      "notes": [
+        "Gender-neutral seats only. Female-supernumerary closing ranks are far more relaxed — around 369 for OPEN in 2025.",
+        "2019–2024 closing ranks were not recovered from a source reliable enough to publish here."
+      ]
+    },
+    {
+      "id": "aiims-delhi-mbbs",
+      "name": "AIIMS New Delhi — MBBS",
+      "examId": "neet-ug",
+      "authority": "Medical Counselling Committee (All India Quota)",
+      "rankType": "air",
+      "rankNote": "These are NEET All India Ranks, so the categories are directly comparable with each other — unlike the JoSAA figures above.",
+      "unit": "closing rank (NEET AIR)",
+      "bands": [
+        { "id": "gen", "label": "General", "categories": ["gen"] },
+        { "id": "ews", "label": "EWS", "categories": ["ews"] },
+        { "id": "obc", "label": "OBC", "categories": ["obc"] },
+        { "id": "sc", "label": "SC", "categories": ["sc"] },
+        { "id": "st", "label": "ST", "categories": ["st"] }
+      ],
+      "series": [
+        { "year": 2024, "values": { "gen": 47, "ews": null, "obc": 186, "sc": 647, "st": 1150 }, "confidence": "single-source", "source": "careers360-aiims" },
+        { "year": 2025, "values": { "gen": 48, "ews": 254, "obc": 206, "sc": 644, "st": 1405 }, "confidence": "single-source", "source": "careers360-aiims" },
+        { "year": 2026, "values": { "gen": 51, "ews": 292, "obc": 192, "sc": 793, "st": 787 }, "confidence": "single-source", "source": "careers360-aiims" }
+      ],
+      "notes": [
+        "2026 figures are Round 1; 2024 and 2025 are later-round closing ranks, so the years are not perfectly like-for-like.",
+        "With around 125 MBBS seats against more than 20 lakh candidates, the General bar has stayed inside the top 51 ranks nationally every year shown.",
+        "2019–2023 were not recovered. AIIMS moved to NEET-based admission in 2020, so a pre-2020 series would not be comparable in any case."
+      ]
+    }
+  ],
+
+  "sources": {
+    "nta-2019": { "label": "NTA press release, JEE (Main) 2019 result", "url": "https://nta.ac.in/Download/Notice/20190429155134.pdf", "tier": "primary" },
+    "esaral": { "label": "eSaral — JEE Main cutoff archive 2019–2025", "url": "https://www.esaral.com/jee/jee-main-cut-off/", "tier": "secondary" },
+    "careers360-jeemain": { "label": "Careers360 — JEE Main cutoff trends", "url": "https://engineering.careers360.com/articles/jee-main-cutoff-trends", "tier": "secondary" },
+    "aakash-2026": { "label": "Aakash — JEE Main 2026 official cutoff", "url": "https://www.aakash.ac.in/blog/jee-main-cutoff-2026-out-percentile-category-wise/", "tier": "secondary" },
+    "jab-2019": { "label": "JEE (Advanced) 2019 — Joint Implementation Committee report", "url": "https://jeeadv.ac.in/reports/2019.pdf", "tier": "primary" },
+    "jab-2020": { "label": "JEE (Advanced) 2020 — JIC report", "url": "https://jeeadv.ac.in/reports/2020.pdf", "tier": "primary" },
+    "jab-2021": { "label": "JEE (Advanced) 2021 — JIC report", "url": "https://jeeadv.ac.in/reports/2021.pdf", "tier": "primary" },
+    "jab-2022": { "label": "JEE (Advanced) 2022 — JIC report", "url": "https://jeeadv.ac.in/reports/2022.pdf", "tier": "primary" },
+    "jab-2023": { "label": "JEE (Advanced) 2023 — JIC report", "url": "https://jeeadv.ac.in/reports/2023.pdf", "tier": "primary" },
+    "jab-2024": { "label": "JEE (Advanced) 2024 — JIC report", "url": "https://jeeadv.ac.in/reports/2024.pdf", "tier": "primary" },
+    "jab-cutoffs-2025": { "label": "JEE (Advanced) 2025 — official qualifying marks", "url": "https://jeeadv.ac.in/documents/cutoffs_2025.pdf", "tier": "primary" },
+    "jab-cutoffs-2026": { "label": "JEE (Advanced) 2026 — official qualifying marks", "url": "https://jeeadv.ac.in/documents/cutoffs_2026.pdf", "tier": "primary" },
+    "allen-neet": { "label": "Allen — NEET UG cutoff archive", "url": "https://allen.in/neet/cut-off", "tier": "secondary" },
+    "careers360-neet": { "label": "Careers360 — NEET cutoff", "url": "https://medicine.careers360.com/articles/neet-cut-off", "tier": "secondary" },
+    "careers360-neetpg": { "label": "Careers360 — NEET PG cutoff", "url": "https://medicine.careers360.com/articles/neet-pg-cut-off", "tier": "secondary" },
+    "getmyuni-neetpg": { "label": "GetMyUni — NEET PG cutoff by year", "url": "https://www.getmyuni.com/exams/neet-pg-cut-off", "tier": "secondary" },
+    "pw-neetpg": { "label": "PhysicsWallah — NEET PG cutoff", "url": "https://www.pw.live/neet-pg/exams/neet-pg-cut-off", "tier": "secondary" },
+    "careers360-inicet": { "label": "Careers360 — INI-CET cutoff", "url": "https://medicine.careers360.com/articles/ini-cet-cutoff", "tier": "secondary" },
+    "careers360-mds": { "label": "Careers360 — NEET MDS cutoff", "url": "https://medicine.careers360.com/articles/neet-mds-cut-off", "tier": "secondary" },
+    "careers360-mds-2019": { "label": "Careers360 — NEET MDS 2019 revised cutoff", "url": "https://news.careers360.com/neet-mds-2019-revised-cut-off-released-nbe-cutoff-plunged-24165-percentile", "tier": "secondary" },
+    "collegedekho-ss": { "label": "CollegeDekho — What is the NEET SS qualifying cutoff", "url": "https://www.collegedekho.com/articles/what-is-neet-ss-qualifying-cutoff/", "tier": "secondary" },
+    "collegedunia-ss": { "label": "Collegedunia — NEET SS cutoff", "url": "https://collegedunia.com/exams/neet-ss/cutoff", "tier": "secondary" },
+    "careers360-fmge": { "label": "Careers360 — FMGE passing marks", "url": "https://medicine.careers360.com/articles/fmge-passing-marks-2026", "tier": "secondary" },
+    "pw-fmge": { "label": "PhysicsWallah — FMGE pass percentage trends", "url": "https://www.pw.live/neet-pg/exams/fmge-pass-percentage", "tier": "secondary" },
+    "collegedekho-aiapget": { "label": "CollegeDekho — AIAPGET cutoff", "url": "https://www.collegedekho.com/exam/aiapget/cutoff", "tier": "secondary" },
+    "collegedunia-aiapget": { "label": "Collegedunia — AIAPGET cutoff", "url": "https://collegedunia.com/exams/aiapget/cutoff", "tier": "secondary" },
+    "careers360-norcet": { "label": "Careers360 — AIIMS NORCET stage 2 cutoffs", "url": "https://news.careers360.com/aiims-norcet-stage-2-result-2023-declared-9140-candidates-category-wise-cut-offs-aiimsexams-ac-in", "tier": "secondary" },
+    "pw-norcet": { "label": "PhysicsWallah — NORCET cutoff", "url": "https://www.pw.live/nursing/exams/aiims-norcet-8-cut-off", "tier": "secondary" },
+    "collegedunia-gpat": { "label": "Collegedunia — GPAT cutoff", "url": "https://collegedunia.com/exams/gpat/cutoff", "tier": "secondary" },
+    "pw-gpat": { "label": "PhysicsWallah — GPAT cutoff", "url": "https://www.pw.live/pharma/exams/gpat-cut-off-2026", "tier": "secondary" },
+    "pw-niper": { "label": "PhysicsWallah — NIPER JEE cutoff", "url": "https://www.pw.live/pharma/exams/niper-jee-cut-off-2025", "tier": "secondary" },
+    "collegedekho-niper": { "label": "CollegeDekho — NIPER JEE cutoff", "url": "https://www.collegedekho.com/exam/niper-jee/cutoff", "tier": "secondary" },
+    "motion-iitb": { "label": "Motion — JEE Advanced cutoff for IIT Bombay", "url": "https://motion.ac.in/examinfo/jee-advanced-cutoff-for-iit-bombay/", "tier": "secondary" },
+    "careers360-aiims": { "label": "Careers360 — AIIMS New Delhi cutoff", "url": "https://www.careers360.com/university/all-india-institute-of-medical-sciences-new-delhi/cut-off", "tier": "secondary" }
+  }
+}

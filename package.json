@@ -1,0 +1,13 @@
+{
+  "name": "indian-exam-cutoffs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Category-wise qualifying cutoffs for India's major engineering and medical entrance exams, 2019 onwards.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "dev": "node --run validate && npx --yes serve . -l 4173",
+    "build": "node scripts/validate.mjs"
+  },
+  "license": "MIT"
+}

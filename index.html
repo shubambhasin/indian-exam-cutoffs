@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indian Exam Cutoffs</title>
+<meta name="description" content="Category-wise qualifying cutoffs for India's major engineering and medical entrance exams from 2019 onwards, with every figure traced to its source.">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:title" content="Indian Exam Cutoffs">
+<meta property="og:description" content="Category-wise qualifying cutoffs for India's major engineering and medical entrance exams from 2019 onwards.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:wght@500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23243B6B'/><path d='M7 22V10h3.2l0 12zM14 22V10h3.2v12zM21 22V10h3.2v12z' fill='%23fff' opacity='.9'/></svg>">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Entrance &amp; qualifying examinations · India</p>
+    <h1>What it actually took to get in</h1>
+    <p class="lede">
+      Category-wise cutoffs for India's major engineering and medical entrance exams,
+      2019 onwards. Every figure carries the source it came from and how far that source
+      can be trusted — and where no data exists, the page says so instead of estimating.
+    </p>
+    <div class="stamp-row">
+      <span>Updated <b id="stamp-updated">—</b></span>
+      <span>Exams covered <b id="stamp-exams">—</b></span>
+      <span>Provenance <b id="stamp-rows">—</b></span>
+      <span>Sources <b id="stamp-sources">—</b></span>
+    </div>
+  </div>
+</header>
+
+<nav class="index-bar" aria-label="Jump to an exam">
+  <div class="wrap">
+    <span class="eyebrow" style="flex:0 0 auto;padding-right:.3rem">Jump to</span>
+    <span id="index-links" style="display:contents"></span>
+    <button class="theme-toggle" id="theme-toggle" type="button">Dark</button>
+  </div>
+</nav>
+
+<main>
+  <section class="primer wrap" aria-labelledby="primer-title">
+    <h2 id="primer-title">Four things that make these numbers easy to misread</h2>
+    <div class="primer-grid">
+
+      <article class="primer-cell">
+        <h3>Qualifying is not admission</h3>
+        <p>
+          A qualifying cutoff only gets a candidate into counselling. The mark that
+          actually wins a seat — the closing rank — is far higher, and differs by
+          institute and branch. Both are shown here, separately and never mixed.
+        </p>
+      </article>
+
+      <article class="primer-cell">
+        <h3>Five categories rarely mean five lines</h3>
+        <p>
+          NEET-UG has two distinct bars, not five: EWS sits inside the UR band, and
+          OBC, SC and ST share the 40th percentile. JEE Advanced has three. Charts here
+          draw only the bands that genuinely differ.
+        </p>
+      </article>
+
+      <article class="primer-cell">
+        <h3>A falling cutoff is not an easier exam</h3>
+        <p>
+          The JAB lowers JEE Advanced criteria until about twice the available seats
+          qualify; NBEMS cuts NEET-PG mid-counselling when seats go vacant. These lines
+          track seat supply and policy at least as much as candidate performance.
+        </p>
+      </article>
+
+      <article class="primer-cell">
+        <h3>Reserved ranks are category ranks</h3>
+        <p>
+          In JoSAA data an ST closing rank of 16 is a rank among ST candidates only —
+          not an All India Rank. Comparing it directly against an OPEN rank of 66 is
+          meaningless. NEET closing ranks, by contrast, are All India Ranks.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="wrap" aria-labelledby="records-title">
+    <div class="section-head">
+      <h2 id="records-title">Exam by exam</h2>
+      <p>
+        Each record shows the qualifying bar over time, the rule behind it, and what the
+        series cannot tell you. Gaps are left visible rather than interpolated.
+      </p>
+    </div>
+    <div class="records" id="records"></div>
+  </section>
+
+  <section class="wrap" aria-labelledby="bench-title">
+    <div class="section-head">
+      <h2 id="bench-title">Benchmark closing ranks</h2>
+      <p>
+        Two reference points for what a seat actually cost, as opposed to what clearing
+        the exam cost. Coverage here is thinner than for qualifying cutoffs — counselling
+        authorities publish per-round data that is rarely archived in comparable form.
+      </p>
+    </div>
+    <div class="records" id="benchmarks"></div>
+  </section>
+
+  <section class="wrap" aria-labelledby="sources-title">
+    <div class="section-head">
+      <h2 id="sources-title">Sources</h2>
+      <p>
+        Primary sources are documents published by the conducting authority itself and read
+        directly. Secondary sources are coaching and admissions aggregators, used only where
+        no primary document was reachable, and flagged as such on every row they support.
+      </p>
+    </div>
+    <div class="source-list" id="source-list"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="colophon">
+      <p>
+        <strong>Known gaps.</strong> INI-SS has no usable public category series. NExT has never
+        been conducted. NEET-MDS is missing 2019–2021, 2023 and 2024 at category level; GPAT is
+        missing 2021–2024; benchmark closing ranks start in 2024. These are recorded as gaps in the
+        dataset rather than filled with estimates.
+      </p>
+      <p>
+        <strong>Corrections welcome.</strong> Every number lives in a single JSON file with the
+        source that supports it. If a figure here disagrees with an official notification, the
+        notification is right — open an issue or a pull request against <code>data/cutoffs.json</code>.
+      </p>
+      <p>
+        Not affiliated with NTA, the Joint Admission Board, NBEMS, AIIMS, MCC or JoSAA.
+      </p>
+    </div>
+  </section>
+</main>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
